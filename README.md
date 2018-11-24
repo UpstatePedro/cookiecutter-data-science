@@ -1,9 +1,9 @@
-# Cookiecutter Data Science
+# Cookiecutter - PyTorch Semantic Segmentation
 
-_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
+_A project structure for running and communicating PyTorch semantic segmentation workflows - heavily inspired by the [Cookiecutter Data Science project](http://drivendata.github.io/cookiecutter-data-science/)._
 
 
-#### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
+#### [Project homepage](https://github.com/UpstatePedro/cookiecutter-semantic-segmentation/)
 
 
 ### Requirements to use the cookiecutter template:
@@ -26,11 +26,7 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/drivendata/cookiecutter-data-science
-
-
-[![asciicast](https://asciinema.org/a/9bgl5qh17wlop4xyxu9n9wr02.png)](https://asciinema.org/a/9bgl5qh17wlop4xyxu9n9wr02)
-
+    cookiecutter https://github.com/UpstatePedro/cookiecutter-semantic-segmentation
 
 ### The resulting directory structure
 ------------
@@ -39,7 +35,6 @@ The directory structure of your new project looks like this:
 
 ```
 ├── LICENSE
-├── Makefile           <- Makefile with commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
 │   ├── external       <- Data from third party sources.

@@ -38,56 +38,49 @@ The directory structure of your new project looks like this:
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
 │   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
+│   ├── intermediate   <- Intermediate data that has been transformed from its Raw form.
+│   ├── master         <- Master file(s) providing the information needed to pull the raw data down
+│   ├── prepared       <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
 ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter notebooks.
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        <- Generated graphics and figures to be used in reporting
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
+├── environment.yaml   <- The requirements file for reproducing the project anaconda environment
 │
 ├── src                <- Source code for use in this project.
 │   ├── __init__.py    <- Makes src a Python module
 │   │
-│   ├── data           <- Scripts to download or generate data
-│   │   └── make_dataset.py
+│   ├── cli            <- Collection of all click commands for project CLI
 │   │
-│   ├── features       <- Scripts to turn raw data into features for modeling
-│   │   └── build_features.py
+│   ├── data           <- Logic for download and munging of (training) data
+│   │   └── tests        <- Automated tests :)
 │   │
-│   ├── models         <- Scripts to train models and then use trained models to make
-│   │   │                 predictions
-│   │   ├── predict_model.py
-│   │   └── train_model.py
+│   ├── inference      <- Logic required for running models 'in production'
+│   │   └── tests        <- Automated tests :)
+│   │
+│   ├── lib            <- Shared logic & utils
+│   │   └── tests        <- Automated tests :)
+│   │
+│   ├── models         <- Logic for defining architectures & managing model instances
+│   │   └── tests        <- Automated tests :)
+│   │
+│   ├── testing        <- Logic for evaluation of trained models
+│   │   └── tests        <- Automated tests :)
+│   │
+│   ├── training       <- Scripts to turn raw data into features for modeling
+│   │   └── tests        <- Automated tests :)
 │   │
 │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-│       └── visualize.py
+│       └── tests        <- Automated tests :)
 │
 └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 ```
-
-## Contributing
-
-We welcome contributions! [See the docs for guidelines](https://drivendata.github.io/cookiecutter-data-science/#contributing).
-
-### Installing development requirements
-------------
-
-    pip install -r requirements.txt
-
-### Running the tests
-------------
-
-    py.test tests

@@ -54,7 +54,7 @@ The directory structure of your new project looks like this:
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        <- Generated graphics and figures to be used in reporting
 │
-├── environment.yaml   <- The requirements file for reproducing the project anaconda environment
+├── results            <- Evaluation summaries
 │
 ├── src                <- Source code for use in this project.
 │   ├── __init__.py    <- Makes src a Python module
@@ -62,25 +62,27 @@ The directory structure of your new project looks like this:
 │   ├── cli            <- Collection of all click commands for project CLI
 │   │
 │   ├── data           <- Logic for download and munging of (training) data
-│   │   └── tests        <- Automated tests :)
+│   │   └── tests      <- Automated tests :)
 │   │
 │   ├── inference      <- Logic required for running models 'in production'
-│   │   └── tests        <- Automated tests :)
+│   │   └── tests      <- Automated tests :)
 │   │
 │   ├── lib            <- Shared logic & utils
-│   │   └── tests        <- Automated tests :)
+│   │   └── tests      <- Automated tests :)
 │   │
 │   ├── models         <- Logic for defining architectures & managing model instances
-│   │   └── tests        <- Automated tests :)
+│   │   └── tests      <- Automated tests :)
 │   │
 │   ├── testing        <- Logic for evaluation of trained models
-│   │   └── tests        <- Automated tests :)
+│   │   └── tests      <- Automated tests :)
 │   │
 │   ├── training       <- Scripts to turn raw data into features for modeling
-│   │   └── tests        <- Automated tests :)
+│   │   └── tests      <- Automated tests :)
 │   │
 │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-│       └── tests        <- Automated tests :)
+│       └── tests      <- Automated tests :)
 │
+├── .env               <- Local environment variables (gitignored)
+├── environment.yaml   <- The requirements file for reproducing the project's anaconda development environment
 └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 ```

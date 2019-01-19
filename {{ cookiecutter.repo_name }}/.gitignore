@@ -79,8 +79,11 @@ target/
 data/raw/**
 !data/raw/.gitkeep
 data/intermediate/**
+!data/intermediate/.gitkeep
 data/prepared/**
+!data/prepared/.gitkeep
 data/evaluation/**
+!data/evaluation/.gitkeep
 # but include the master data file(s)
 !data/master/
 

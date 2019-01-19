@@ -76,10 +76,11 @@ target/
 .ipynb_checkpoints/
 
 # exclude data from source control by default
-data/raw/
-data/intermediate/
-data/prepared/
-data/evaluation/
+data/raw/**
+!data/raw/.gitkeep
+data/intermediate/**
+data/prepared/**
+data/evaluation/**
 # but include the master data file(s)
 !data/master/
 

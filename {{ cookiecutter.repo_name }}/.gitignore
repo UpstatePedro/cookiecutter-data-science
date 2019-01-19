@@ -76,9 +76,12 @@ target/
 .ipynb_checkpoints/
 
 # exclude data from source control by default
-/data/
+data/raw/
+data/intermediate/
+data/prepared/
+data/evaluation/
 # but include the master data file(s)
-!/data/master/
+!data/master/
 
 # Mac OS-specific storage files
 .DS_Store

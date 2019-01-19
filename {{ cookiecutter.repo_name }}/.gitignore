@@ -84,8 +84,6 @@ data/prepared/**
 !data/prepared/.gitkeep
 data/evaluation/**
 !data/evaluation/.gitkeep
-# but include the master data file(s)
-!data/master/
 
 # Mac OS-specific storage files
 .DS_Store
